@@ -104,7 +104,7 @@ object TransformationOperation {
     val scoreList = Array(Tuple2(65, "Leo"), Tuple2(50, "Tom"),
       Tuple2(100, "Marry"), Tuple2(85, "Jack"))
     val scores = sc.parallelize(scoreList, 1)
-    val sortedScoresRDD = scores.sortByKey(false) // 默认升序，false降序
+    val sortedScoresRDD = scores.sortByKey(ascending = false) // 默认升序，false降序
     sortedScoresRDD.foreach(studentScore => println(studentScore._1 + ": " + studentScore._2))
 
   }
