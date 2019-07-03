@@ -1,4 +1,5 @@
 package cn.spark.study.core
+
 import org.apache.spark.{SparkConf, SparkContext}
 
 object SecondSort {
