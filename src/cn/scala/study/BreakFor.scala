@@ -59,7 +59,7 @@ import scala.util.control.Breaks._
   breakable{
     for(i <- 0 until 10){
       if(i == 5){
-        break;
+        break
 
       }
       res += i
