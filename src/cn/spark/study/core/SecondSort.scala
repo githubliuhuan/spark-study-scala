@@ -10,11 +10,11 @@ object SecondSort {
     val sc = new SparkContext(conf)
 
     val lines = sc.textFile("", 1)
-    val pairs = lines.map{ line => {
-      new SecondSortKey(line.split(" ")(0).toInt, line.split(" ")(1).toInt),
-      line}}
+    // val pairs = lines.map{ line => {
+    //  new SecondSortKey(line.split(" ")(0).toInt, line.split(" ")(1).toInt),
+    //  line}}
 
-    val sortedPairs = pair.
+     // val sortedPairs = pair.
 
 
   }
