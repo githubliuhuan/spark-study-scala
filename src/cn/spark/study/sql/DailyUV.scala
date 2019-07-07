@@ -3,6 +3,7 @@ package cn.spark.study.sql
 import org.apache.spark.sql.types.{IntegerType, StringType, StructField, StructType}
 import org.apache.spark.sql.{Row, SQLContext}
 import org.apache.spark.{SparkConf, SparkContext}
+import org.apache.spark.sql.functions._
 
 object DailyUV {
   def main(args: Array[String]): Unit = {
