@@ -31,7 +31,6 @@ object UDF {
     sqlContext.sql("select name,strLen(name) from names")
       .collect()
       .foreach(println)
-
   }
 
 }
