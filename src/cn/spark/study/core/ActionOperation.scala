@@ -73,7 +73,7 @@ object ActionOperation {
     val sc = new SparkContext(conf)
     val numberArray = Array(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
     val number = sc.parallelize(numberArray, 1)
-    val top3Numbers = number.saveAsTextFile("")
+    number.saveAsTextFile("")
   }
 
 
@@ -87,7 +87,7 @@ object ActionOperation {
     val scoreList = Array(Tuple2("class1", "leo"),
       Tuple2("class2", "jack"),
       Tuple2("class1", "tom"),
-      Tuple2("class2", "jen")),
+      Tuple2("class2", "jen"),
       Tuple2("class2", "marry"))
     val students = sc.parallelize(scoreList,1)
     val studentCounts = students.countByKey()
