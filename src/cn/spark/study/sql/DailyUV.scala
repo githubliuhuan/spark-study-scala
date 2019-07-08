@@ -24,7 +24,7 @@ object DailyUV {
       "2015-10-02,1122",
       "2015-10-02,1121",
       "2015-10-02,1123",
-      "2015-10-02,1123",
+      "2015-10-02,1123"
     )
 
     val userAccessLogRDD = sc.parallelize(userAccessLog)
