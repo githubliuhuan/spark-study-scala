@@ -12,7 +12,7 @@ object YiXinCheckCount {
     val sc = new SparkContext(conf)
 
     val hivecontext = new HiveContext(sc)
-    val checkTableDF = hivecontext.sql("select count(*) from dm.dim_crm_customer")
+    val checkTableDF = hivecontext.sql("select count(*),unix_timestamp(from_unixtime("YYYY-MM-dd HH:mm:ss")) from dm.dim_crm_customer")
     println(checkTableDF)
     checkTableDF.write.mode(SaveMode.Append).saveAsTable("")
 }
